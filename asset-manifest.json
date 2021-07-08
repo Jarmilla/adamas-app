@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/adamas-app/static/css/main.a617e044.chunk.css",
+    "main.js": "/adamas-app/static/js/main.01d41d9b.chunk.js",
+    "main.js.map": "/adamas-app/static/js/main.01d41d9b.chunk.js.map",
+    "runtime-main.js": "/adamas-app/static/js/runtime-main.e61b7857.js",
+    "runtime-main.js.map": "/adamas-app/static/js/runtime-main.e61b7857.js.map",
+    "static/js/2.ad294b23.chunk.js": "/adamas-app/static/js/2.ad294b23.chunk.js",
+    "static/js/2.ad294b23.chunk.js.map": "/adamas-app/static/js/2.ad294b23.chunk.js.map",
+    "static/js/3.6baacd53.chunk.js": "/adamas-app/static/js/3.6baacd53.chunk.js",
+    "static/js/3.6baacd53.chunk.js.map": "/adamas-app/static/js/3.6baacd53.chunk.js.map",
+    "index.html": "/adamas-app/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/adamas-app/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.ad294b23.chunk.js.LICENSE.txt": "/adamas-app/static/js/2.ad294b23.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/adamas-app/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e61b7857.js",
+    "static/js/2.ad294b23.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.01d41d9b.chunk.js"
+  ]
+}
