@@ -1,3 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+
 .App {
+  height: 100vh;
+  margin: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2 {
   text-align: center;
+  padding: 1rem;
+  background-color: yellow;
+  color: black;
+  margin: 0.5rem 0;
+}
+
+h1 {
+  border-radius: 3rem 0 0 0;
+}
+
+p {
+  margin: 0;
+}
+
+main {
+  flex: 100 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: stretch;
+}
+
+.decor-box {
+  flex: 1 0 1rem;
+  background-color: red;
+  margin-right: 0.5rem;
+}
+
+article {
+  overflow: scroll;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+nav h2 {
+  width: 100%;
+}
+
+nav h2:first-child {
+  border-radius: 0 0 0 2rem;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  background-color: cyan;
+}
+
+.selected {
+  background-color: skyblue;
 }
