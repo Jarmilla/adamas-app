@@ -39,11 +39,12 @@ main {
 
 .decor-box {
   flex: 1 0 1rem;
-  background-color: red;
+  background-color: blue;
   margin-right: 0.5rem;
 }
 
 article {
+  flex: 10 auto;
   overflow: scroll;
 }
 
@@ -68,4 +69,8 @@ nav h2:first-child {
 
 .selected {
   background-color: skyblue;
+}
+
+video {
+  width: 100%;
 }
