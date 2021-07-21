@@ -29,7 +29,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1 onClick={toHome}>ASDF Adamas</h1>
+      <button className="home-button button-effect" onClick={toHome}>
+        ASDF Adamas
+      </button>
 
       <main>
         <div className="decor-box"></div>
@@ -41,12 +43,12 @@ function App() {
       </main>
 
       <nav>
-        <h2 className="nav-button" onClick={toScanner}>
+        <button className="button-effect" onClick={toSpeciments}>
+          Adatok
+        </button>
+        <button className="button-effect" onClick={toScanner}>
           Scanner
-        </h2>
-        <h2 className="nav-button" onClick={toSpeciments}>
-          Példányok
-        </h2>
+        </button>
       </nav>
     </div>
   );
