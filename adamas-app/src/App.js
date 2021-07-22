@@ -29,12 +29,16 @@ function App() {
 
   return (
     <div className="App">
-      <button className="home-button button-effect " onClick={toHome}>
+      <button className={`home-button button-effect ${isHomeShown ? "selected" : null}`} onClick={toHome}>
         ASDF Adamas
       </button>
 
       <main>
-        <div className="decor-box"></div>
+        <div className="decor-box">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <article>
           {isHomeShown && <Home />}
           {isScannerShown && <Scanner />}
@@ -43,10 +47,10 @@ function App() {
       </main>
 
       <nav>
-        <button className="button-effect" onClick={toCollectionOfData}>
+        <button className={`button-effect ${isCollectionOfDataShown ? "selected" : null}`} onClick={toCollectionOfData}>
           Adatok
         </button>
-        <button className="button-effect" onClick={toScanner}>
+        <button className={`button-effect ${isScannerShown ? "selected" : null}`} onClick={toScanner}>
           Scanner
         </button>
       </nav>
