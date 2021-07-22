@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/adamas-app/static/css/main.a04e74b9.chunk.css",
-    "main.js": "/adamas-app/static/js/main.1542dbdd.chunk.js",
-    "main.js.map": "/adamas-app/static/js/main.1542dbdd.chunk.js.map",
+    "main.css": "/adamas-app/static/css/main.11651f01.chunk.css",
+    "main.js": "/adamas-app/static/js/main.8fd2f870.chunk.js",
+    "main.js.map": "/adamas-app/static/js/main.8fd2f870.chunk.js.map",
     "runtime-main.js": "/adamas-app/static/js/runtime-main.67344393.js",
     "runtime-main.js.map": "/adamas-app/static/js/runtime-main.67344393.js.map",
     "static/js/2.bdafaeed.chunk.js": "/adamas-app/static/js/2.bdafaeed.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.3b3a2e90.chunk.js": "/adamas-app/static/js/3.3b3a2e90.chunk.js",
     "static/js/3.3b3a2e90.chunk.js.map": "/adamas-app/static/js/3.3b3a2e90.chunk.js.map",
     "index.html": "/adamas-app/index.html",
-    "static/css/main.a04e74b9.chunk.css.map": "/adamas-app/static/css/main.a04e74b9.chunk.css.map",
+    "static/css/main.11651f01.chunk.css.map": "/adamas-app/static/css/main.11651f01.chunk.css.map",
     "static/js/2.bdafaeed.chunk.js.LICENSE.txt": "/adamas-app/static/js/2.bdafaeed.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.67344393.js",
     "static/js/2.bdafaeed.chunk.js",
-    "static/css/main.a04e74b9.chunk.css",
-    "static/js/main.1542dbdd.chunk.js"
+    "static/css/main.11651f01.chunk.css",
+    "static/js/main.8fd2f870.chunk.js"
   ]
 }
