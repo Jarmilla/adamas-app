@@ -1,22 +1,27 @@
 import React, { useState } from "react";
-import QrReader from "react-qr-scanner";
+import QrReader from "react-qr-reader";
 
 function Scanner() {
-  const [test, setTest] = useState("");
+  const [qrData, setQrData] = useState("");
 
-  const handleScan = (result) => {
-    if (result) {
-      setTest(result);
-      console.log(result);
-    }
+  const handleScan = (data) => {
+    if (data) setQrData(data);
   };
-  const handleError = (err) => {
-    console.error(err);
-  };
+
+  const handleError = (err) => console.error(err);
+
   return (
     <div>
-      <h2>Scanned: {test.text}</h2>
-      <QrReader delay={500} onError={handleError} onScan={handleScan} />
+      {qrData === "" ? (
+        <h3>Scanning...</h3>
+      ) : (
+        <div>
+          <h3>Scanned:</h3>
+          <p>{qrData}</p>
+        </div>
+      )}
+
+      <QrReader delay={300} onError={handleError} onScan={handleScan} facingMode="environment" />
     </div>
   );
 }

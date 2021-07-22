@@ -13,7 +13,7 @@ body {
 
 .App {
   font-family: Montserrat, Droid Sans, sans-serif;
-  height: 100vh;
+  height: 90vh;
   margin: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -25,11 +25,11 @@ button {
   font-weight: normal;
   font-family: Audiowide, Arial, Helvetica, sans-serif;
   text-align: center;
-  padding: 1rem;
   margin: 0;
+  padding: 1rem;
+  border: none;
   background-color: $primarily-color;
   color: black;
-  border: none;
 }
 
 .home-button {
@@ -73,19 +73,22 @@ main {
   flex: 1 0 1rem;
   background-color: blue;
   margin-right: 0.5rem;
+  width: 5rem;
 }
 
 article {
   flex: 10 auto;
   overflow: scroll;
+  text-align: center;
+
+  video {
+    width: 100%;
+    margin: 0.5rem auto;
+  }
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
-}
-
-video {
-  width: 100%;
 }
