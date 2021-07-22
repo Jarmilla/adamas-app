@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <button className="home-button button-effect" onClick={toHome}>
+      <button className="home-button button-effect " onClick={toHome}>
         ASDF Adamas
       </button>
 
