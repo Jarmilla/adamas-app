@@ -2,29 +2,29 @@ import "./App.scss";
 import React, { useState } from "react";
 import Home from "./components/Home";
 import Scanner from "./components/Scanner";
-import Speciments from "./components/Speciments";
+import CollectionOfData from "./components/CollectionOfData";
 
 function App() {
   const [isHomeShown, setIsHomeShown] = useState(true);
   const [isScannerShown, setSnanerShown] = useState(false);
-  const [isSpecimentsShown, setIsSpecimentsShown] = useState(false);
+  const [isCollectionOfDataShown, setIsCollectionOfDataShown] = useState(false);
 
   const toHome = () => {
-    setIsSpecimentsShown(false);
+    setIsCollectionOfDataShown(false);
     setSnanerShown(false);
     setIsHomeShown(true);
   };
 
   const toScanner = () => {
     setIsHomeShown(false);
-    setIsSpecimentsShown(false);
+    setIsCollectionOfDataShown(false);
     setSnanerShown(true);
   };
 
-  const toSpeciments = () => {
+  const toCollectionOfData = () => {
     setIsHomeShown(false);
     setSnanerShown(false);
-    setIsSpecimentsShown(true);
+    setIsCollectionOfDataShown(true);
   };
 
   return (
@@ -38,12 +38,12 @@ function App() {
         <article>
           {isHomeShown && <Home />}
           {isScannerShown && <Scanner />}
-          {isSpecimentsShown && <Speciments />}
+          {isCollectionOfDataShown && <CollectionOfData />}
         </article>
       </main>
 
       <nav>
-        <button className="button-effect" onClick={toSpeciments}>
+        <button className="button-effect" onClick={toCollectionOfData}>
           Adatok
         </button>
         <button className="button-effect" onClick={toScanner}>
