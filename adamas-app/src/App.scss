@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 $primarily-color: yellow;
-$secondary-color: skyblue;
+$secondary-color: cyan;
 
 body {
   margin: 0;
@@ -50,12 +50,12 @@ nav button {
   transition: 300ms ease-in-out;
   &:hover,
   &:focus {
-    background-color: cyan;
+    background-color: $secondary-color;
   }
 }
 
 .selected {
-  background-color: skyblue;
+  background-color: $secondary-color;
 }
 
 p {
@@ -71,9 +71,24 @@ main {
 
 .decor-box {
   flex: 1 0 1rem;
-  background-color: blue;
   margin-right: 0.5rem;
   width: 5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 0.5rem;
+  & :first-child {
+    flex: 4;
+    background-color: $secondary-color;
+  }
+  & :nth-child(2) {
+    flex: 3;
+    background-color: $primarily-color;
+  }
+  & :last-child {
+    flex: 2;
+    background-color: blue;
+  }
 }
 
 article {
@@ -82,7 +97,6 @@ article {
   text-align: center;
 
   video {
-    width: 100%;
     margin: 0.5rem auto;
   }
 }
@@ -91,4 +105,22 @@ nav {
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
+}
+
+@media (min-width: 400px) {
+  .App {
+    height: 100vh;
+  }
+
+  article div section {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 769px) {
+  article div section {
+    width: 60%;
+    margin: auto;
+  }
 }
