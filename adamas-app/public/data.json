@@ -1,0 +1,77 @@
+{
+    "items": {
+        "cameleon1": {
+            "name": "Kaméleon",
+            "type": "Állat",
+            "description": [
+                "Színváltós bőrrel rendelkező hüllő",
+                "Életkor: 14",
+                "Nem: Hím ♂",
+                "Egészségi állapot: stabil",
+                "Jobb láb: letörött karom",
+                "Farok: Pigment hiba",
+                "Bélrendszer: Mikroplasztik eltömődés"
+            ],
+            "coordinates": {
+                "latitude": 47.809977,
+                "longitude": 19.979944
+            }
+        },
+        "carp": {
+            "name": "Ponty",
+            "type": "Állat",
+            "description": [
+                "Édesvizi hal",
+                "Életkor: 2",
+                "Nem: Nőstény ♀",
+                "Egészségi állapot: gyenge",
+                "Test: Nitrit mérgezés",
+                "Vér: Oxigén hiány"
+            ],
+            "coordinates": {
+                "latitude": 47.809900,
+                "longitude": 19.979900
+            }
+        },
+        "crystal_deposit": {
+            "name": "Kristály lelőhely",
+            "type": "Helyszín",
+            "description": [
+                "Természetes eredetű kritály barlang",
+                "Dilithium koncentráció: Magas",
+                "Tritium koncentráció: Magas",
+                "Veszélyforrás: Kristályevő lények"
+            ],
+            "coordinates": {
+                "latitude": 47.809753, 
+                "longitude": 19.980812
+            }
+        },
+        "crystal_green": {
+            "name": "Zöld kristály",
+            "type": "Tárgy",
+            "description": [
+                "Kriptonit koncentráció: 20%",
+                "Sosem árthat egy darab, ha főgonosz akarsz lenni"
+            ],
+            "coordinates": {
+                "latitude": 47.809753, 
+                "longitude": 19.980812
+            }
+        },
+        "crystal_blue": {
+            "name": "Kék kristály",
+            "type": "Tárgy",
+            "description": [
+                "Kriptonit koncentráció: 0.1%",
+                "Dilithium koncentráció: 80%",
+                "Kék hiperhajtómű kompatibilis",
+                "Fogyasztásra nem ajánlott"
+            ],
+            "coordinates": {
+                "latitude": 47.809753, 
+                "longitude": 19.980812
+            }
+        }
+    }
+}
