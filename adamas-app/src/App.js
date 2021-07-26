@@ -1,5 +1,5 @@
 import "./App.scss";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Home from "./components/Home";
 import Scanner from "./components/Scanner";
 import CollectionOfData from "./components/CollectionOfData";
@@ -27,6 +27,21 @@ function App() {
     setIsCollectionOfDataShown(true);
   };
 
+  const [data, setData] = useState({"items":{}});
+
+  const fetchData = () => {
+    fetch('data.json', {
+      headers : {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => response.json())
+    .then(setData)
+  }
+
+  useEffect(fetchData, [setData])
+
   return (
     <div className="App">
       <button className={`home-button button-effect ${isHomeShown ? "selected" : null}`} onClick={toHome}>
@@ -43,6 +58,7 @@ function App() {
           {isHomeShown && <Home />}
           {isScannerShown && <Scanner />}
           {isCollectionOfDataShown && <CollectionOfData />}
+          <p>{ JSON.stringify(data) }</p>
         </article>
       </main>
 
