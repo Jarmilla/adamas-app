@@ -57,8 +57,7 @@ function App() {
         <article>
           {isHomeShown && <Home />}
           {isScannerShown && <Scanner />}
-          {isCollectionOfDataShown && <CollectionOfData />}
-          <p>{JSON.stringify(data)}</p>
+          {isCollectionOfDataShown && <CollectionOfData data={data} />}
         </article>
       </main>
 
