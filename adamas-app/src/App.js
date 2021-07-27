@@ -27,20 +27,20 @@ function App() {
     setIsCollectionOfDataShown(true);
   };
 
-  const [data, setData] = useState({"items":{}});
+  const [data, setData] = useState({ items: {} });
 
   const fetchData = () => {
-    fetch('data.json', {
-      headers : {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }
+    fetch(process.env.PUBLIC_URL + "/data.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
     })
-    .then(response => response.json())
-    .then(setData)
-  }
+      .then((response) => response.json())
+      .then(setData);
+  };
 
-  useEffect(fetchData, [setData])
+  useEffect(fetchData, [setData]);
 
   return (
     <div className="App">
@@ -58,7 +58,7 @@ function App() {
           {isHomeShown && <Home />}
           {isScannerShown && <Scanner />}
           {isCollectionOfDataShown && <CollectionOfData />}
-          <p>{ JSON.stringify(data) }</p>
+          <p>{JSON.stringify(data)}</p>
         </article>
       </main>
 
