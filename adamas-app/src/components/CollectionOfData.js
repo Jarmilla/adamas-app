@@ -1,4 +1,5 @@
 import React from "react";
+import PieceOfData from "./PieceOfData";
 
 function CollectionOfData({ data }) {
   return (
@@ -7,8 +8,7 @@ function CollectionOfData({ data }) {
       {data &&
         Object.keys(data.items).map((key) => {
           let value = data.items[key];
-          console.log(key, value);
-          return <h2 key={key}>{value.name}</h2>;
+          return <PieceOfData key={value.name} pieceOfData={value} />;
         })}
       <p>{JSON.stringify(data)}</p>
     </div>
