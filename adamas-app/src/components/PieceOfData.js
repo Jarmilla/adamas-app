@@ -19,8 +19,8 @@ function PieceOfData({ pieceOfData }) {
       {isDataShown && (
         <div>
           <h3>Olvasás részletes adatai:</h3>
-          <p>Típus: {pieceOfData.type}</p>
           <ul>
+            <li>Típus: {pieceOfData.type}</li>
             {pieceOfData.description.map((trait, key) => (
               <li key={key}>{trait}</li>
             ))}
