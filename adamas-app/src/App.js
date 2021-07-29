@@ -8,6 +8,7 @@ function App() {
   const [isHomeShown, setIsHomeShown] = useState(true);
   const [isScannerShown, setSnanerShown] = useState(false);
   const [isCollectionOfDataShown, setIsCollectionOfDataShown] = useState(false);
+  const [choosedData, setChoosedDate] = useState(null);
 
   const toHome = () => {
     setIsCollectionOfDataShown(false);
@@ -25,6 +26,7 @@ function App() {
     setIsHomeShown(false);
     setSnanerShown(false);
     setIsCollectionOfDataShown(true);
+    setChoosedDate(null);
   };
 
   const [data, setData] = useState({ items: {} });
@@ -57,7 +59,7 @@ function App() {
         <article>
           {isHomeShown && <Home />}
           {isScannerShown && <Scanner />}
-          {isCollectionOfDataShown && <CollectionOfData data={data} />}
+          {isCollectionOfDataShown && <CollectionOfData data={data} choosedData={choosedData} setChoosedDate={setChoosedDate} />}
         </article>
       </main>
 
