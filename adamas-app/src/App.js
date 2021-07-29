@@ -3,29 +3,34 @@ import React, { useState, useEffect } from "react";
 import Home from "./components/Home";
 import Scanner from "./components/Scanner";
 import CollectionOfData from "./components/CollectionOfData";
+import PieceOfData from "./components/PieceOfData";
 
 function App() {
   const [isHomeShown, setIsHomeShown] = useState(true);
   const [isScannerShown, setSnanerShown] = useState(false);
   const [isCollectionOfDataShown, setIsCollectionOfDataShown] = useState(false);
+  const [isPieceOfDataShown, setIsPieceOfDataShown] = useState(false);
   const [choosedData, setChoosedDate] = useState(null);
 
   const toHome = () => {
-    setIsCollectionOfDataShown(false);
-    setSnanerShown(false);
     setIsHomeShown(true);
+    setIsCollectionOfDataShown(false);
+    setIsPieceOfDataShown(false);
+    setSnanerShown(false);
   };
 
   const toScanner = () => {
     setIsHomeShown(false);
     setIsCollectionOfDataShown(false);
+    setIsPieceOfDataShown(false);
     setSnanerShown(true);
   };
 
   const toCollectionOfData = () => {
     setIsHomeShown(false);
-    setSnanerShown(false);
     setIsCollectionOfDataShown(true);
+    setIsPieceOfDataShown(false);
+    setSnanerShown(false);
     setChoosedDate(null);
   };
 
@@ -59,7 +64,15 @@ function App() {
         <article>
           {isHomeShown && <Home />}
           {isScannerShown && <Scanner />}
-          {isCollectionOfDataShown && <CollectionOfData data={data} choosedData={choosedData} setChoosedDate={setChoosedDate} />}
+          {isCollectionOfDataShown && (
+            <CollectionOfData
+              data={data}
+              setChoosedDate={setChoosedDate}
+              setIsPieceOfDataShown={setIsPieceOfDataShown}
+              setIsCollectionOfDataShown={setIsCollectionOfDataShown}
+            />
+          )}
+          {isPieceOfDataShown && <PieceOfData pieceOfData={choosedData} />}
         </article>
       </main>
 
