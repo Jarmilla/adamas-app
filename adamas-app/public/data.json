@@ -1,6 +1,6 @@
 {
     "items": {
-        "cameleon1": {
+        "Ha ezt el tudod olvasni akkor Sikerült! :)": {
             "name": "Kaméleon",
             "type": "Állat",
             "description": [
@@ -33,7 +33,7 @@
                 "longitude": 19.979900
             }
         },
-        "crystal_deposit": {
+        "https://tabor.alkimistalaboratorium.hu/": {
             "name": "Kristály lelőhely",
             "type": "Helyszín",
             "description": [

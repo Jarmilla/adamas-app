@@ -2,22 +2,29 @@ import React, { useState } from "react";
 import QrReader from "react-qr-reader";
 
 function Scanner() {
-  const [qrData, setQrData] = useState("");
+  const [newQrData, setNewQrData] = useState("");
 
   const handleScan = (data) => {
-    if (data) setQrData(data);
+    if (data !== null) {
+      setNewQrData(data);
+      let storedData = JSON.parse(localStorage.getItem("scanned")) || [];
+      if (!storedData.includes(data)) {
+        storedData.push(data);
+        localStorage.setItem("scanned", JSON.stringify(storedData));
+      }
+    }
   };
 
   const handleError = (err) => console.error(err);
 
   return (
     <div>
-      {qrData === "" ? (
+      {newQrData === "" ? (
         <h3>Scanning...</h3>
       ) : (
         <div>
           <h3>Scanned:</h3>
-          <p>{qrData}</p>
+          <p>{newQrData}</p>
         </div>
       )}
 
