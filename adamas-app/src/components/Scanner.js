@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import QrReader from "react-qr-reader";
 
-function Scanner() {
+function Scanner({ data }) {
   const [newQrData, setNewQrData] = useState("");
 
   const handleScan = (data) => {

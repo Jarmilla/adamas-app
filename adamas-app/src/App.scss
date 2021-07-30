@@ -79,9 +79,8 @@ main {
 }
 
 .decor-box {
-  flex: 1 0 1rem;
+  flex: 1 0;
   margin-right: 0.5rem;
-  width: 5rem;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -101,7 +100,7 @@ main {
 }
 
 article {
-  flex: 10 auto;
+  flex: 10 0;
   overflow: scroll;
   text-align: center;
 
@@ -117,12 +116,18 @@ nav {
 }
 
 .collection-of-data h2 {
-  margin: 0.5rem;
+  margin: 0.5rem auto;
 }
 
 @media (min-width: 400px) {
   .App {
     height: 100vh;
+  }
+}
+
+@media (min-width: 768px) {
+  article {
+    flex: 20 0;
   }
 
   article div section {
@@ -131,7 +136,7 @@ nav {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1000px) {
   article div section {
     width: 60%;
     margin: auto;

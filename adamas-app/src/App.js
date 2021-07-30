@@ -7,31 +7,38 @@ import PieceOfData from "./components/PieceOfData";
 
 function App() {
   const [isHomeShown, setIsHomeShown] = useState(true);
-  const [isScannerShown, setSnanerShown] = useState(false);
+  const [isScannerShown, setScannerShown] = useState(false);
   const [isCollectionOfDataShown, setIsCollectionOfDataShown] = useState(false);
   const [isPieceOfDataShown, setIsPieceOfDataShown] = useState(false);
-  const [choosedData, setChoosedDate] = useState(null);
+  const [choosedData, setChoosedData] = useState(null);
 
   const toHome = () => {
     setIsHomeShown(true);
     setIsCollectionOfDataShown(false);
     setIsPieceOfDataShown(false);
-    setSnanerShown(false);
-  };
-
-  const toScanner = () => {
-    setIsHomeShown(false);
-    setIsCollectionOfDataShown(false);
-    setIsPieceOfDataShown(false);
-    setSnanerShown(true);
+    setScannerShown(false);
   };
 
   const toCollectionOfData = () => {
     setIsHomeShown(false);
     setIsCollectionOfDataShown(true);
     setIsPieceOfDataShown(false);
-    setSnanerShown(false);
-    setChoosedDate(null);
+    setScannerShown(false);
+    setChoosedData(null);
+  };
+
+  const toPieceOfData = () => {
+    setIsHomeShown(false);
+    setIsCollectionOfDataShown(false);
+    setIsPieceOfDataShown(true);
+    setScannerShown(false);
+  };
+
+  const toScanner = () => {
+    setIsHomeShown(false);
+    setIsCollectionOfDataShown(false);
+    setIsPieceOfDataShown(false);
+    setScannerShown(true);
   };
 
   const [data, setData] = useState({ items: {} });
@@ -63,15 +70,8 @@ function App() {
         </div>
         <article>
           {isHomeShown && <Home />}
-          {isScannerShown && <Scanner />}
-          {isCollectionOfDataShown && (
-            <CollectionOfData
-              data={data}
-              setChoosedDate={setChoosedDate}
-              setIsPieceOfDataShown={setIsPieceOfDataShown}
-              setIsCollectionOfDataShown={setIsCollectionOfDataShown}
-            />
-          )}
+          {isScannerShown && <Scanner data={data} />}
+          {isCollectionOfDataShown && <CollectionOfData data={data} setChoosedData={setChoosedData} toPieceOfData={toPieceOfData} />}
           {isPieceOfDataShown && <PieceOfData pieceOfData={choosedData} />}
         </article>
       </main>
