@@ -1,6 +1,6 @@
 import React from "react";
 
-function CollectionOfData({ data, setChoosedDate, setIsPieceOfDataShown, setIsCollectionOfDataShown }) {
+function CollectionOfData({ data, setChoosedData, toPieceOfData }) {
   return (
     <div className="collection-of-data">
       <h1>Összegyűjtött Adatok</h1>
@@ -12,9 +12,8 @@ function CollectionOfData({ data, setChoosedDate, setIsPieceOfDataShown, setIsCo
             return (
               <h2
                 onClick={() => {
-                  setChoosedDate(value);
-                  setIsPieceOfDataShown(true);
-                  setIsCollectionOfDataShown(false);
+                  setChoosedData(value);
+                  toPieceOfData();
                 }}
                 key={key}
               >
