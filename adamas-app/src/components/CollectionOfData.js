@@ -1,6 +1,6 @@
 import React from "react";
 
-function CollectionOfData({ data, setChoosedData, toPieceOfData }) {
+function CollectionOfData({ data, setChosenData, toPieceOfData }) {
   return (
     <div className="collection-of-data">
       <h1>Összegyűjtött Adatok</h1>
@@ -12,7 +12,7 @@ function CollectionOfData({ data, setChoosedData, toPieceOfData }) {
             return (
               <h2
                 onClick={() => {
-                  setChoosedData(value);
+                  setChosenData(value);
                   toPieceOfData();
                 }}
                 key={key}
