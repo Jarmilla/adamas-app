@@ -1,0 +1,104 @@
+
+parancs_1:
+    name: 1. Adatgyüjtés
+    type: Paracs
+    coordinates: &parancs_1_coordinates
+        latitude: 47.809977
+        longitude: 19.979944
+    description:
+    - Keressék meg az adat-gyüjtő hengert.
+    - Töltsék le az adatokat az univerzális letapogatóval. A helyes interfész az osztaguk jelével van ellátva.
+    - Dokumentálják az eseményt egy statikus vizuális felvétellel. A képen szerepeljen a teljes osztaguk, valamint az adat-gyüjtő henger.
+
+parancs_2_a:
+    name: 2. Élőlény begyüjtése
+    type: Parancs
+    coordinates: &parancs_2_coordinates
+        latitude: 47.809753
+        longitude: 19.980812
+    description:
+    - A koordinátán keressék meg a megfelelő állatot és hozzák be.
+
+parancs_2_b:
+    name: 2. Élőlény begyüjtése
+    type: Parancs
+    coordinates: *parancs_2_coordinates
+    description:
+    - A koordinátán keressék meg a megfelelő állatot és hozzák be.
+
+parancs_2_c:
+    name: 2. Élőlény begyüjtése
+    type: Parancs
+    coordinates: *parancs_2_coordinates
+    description:
+    - A koordinátán keressék meg a megfelelő állatot és hozzák be. A parancson rajta van, hogy mit kell megtalálni.
+
+#6féle állat készül ehhez. 
+#2 kék skorpió + 1 kék beteg skorpió (név:  “Sárga Srikkon” Nevét megtalálójáról Sárga Eufráteszről kapta.) 
+#A “Sárga Srikkon”  bemutatása: teste vörös vagy piros színű. Az egészséges példányok hátán keskeny sötét csíkok figyelhetőek meg. Összesen 8 lába van, ebből 6 járóláb 2 pedig a farok végén található úgynevezett fogólábak, melyek cípése méreganyagot juttat a szervezetbe.
+#2 sárga százlábú + 1 sárga hím százlábú (név: “Piros Etther” Nevét megtalálójáról Piros Enkiduról kapta.)
+#A “Piros Etther” bemutatása: 
+#Teste hosszú, rovátkált. Legalább 10 pár lába van, melyekkel kígyóforma mozgást ír le a fűben. Színe kékes, esetenként zöldeskékes. A nőstények fején kettőskeresztre emlékeztető, feromon-szerv található, mellyel a hímeket csalogatják.
+#2 piros pókféle + 1 nőstény pókféle (név: “Kék Iotionis” Nevét megtalálójáról Kék Edömérről kapta.) 
+#A “Kék Iotionis” bemutatása: Teste a földön honos pókokhoz hasonlít, de hosszú farka van a potrohája végén, mellyel könnyedén kapaszkodik meg a fákon. Teste sárgás színű és a hímek hasán sötétszínű pöttyök vagy foltok figyelhetőek meg, mely szerveit a párkereséshez használja.
+#Minden állaton QR-kód. Ami megmutatja, mi is az, ami ott van.
+#(Életben tartási kritériumok: 1A 3B 2C (1,2,3,A,B,C))
+
+
+#3. keressék meg a növényt, ami az állatot meggyógyíthatja (az állat adatlapján van rajta). 
+#A helyszínen 9-féle növény van. QR-kóddal (esetleg, vagy a lény adatlapján van egy leírás a növényről)
+
+#Növékenyek:
+
+# Lityalang:
+# Virága fehérszínű gömbőcökre hasonlít. Levele kékes színű
+
+# Kertiédike:
+# Virága piros vagy vörös színű, hosszúkás. Levele is vöröses.
+
+# Sárgafurginka:
+# Levelei sárgás színűek. Termése fémes színű, innen is a furginka név.
+
+# Lilásfereng:
+# Levelei lilás színűek és csíkosak.
+
+# Sitternus:
+# Narancssárga levelei vannak. Középen egy nagyobb  termés található rajta, melyet, ha megcsípi a dér felfúvódik és a spóráit messze ellövi. Ez utóbbi hívják a helyi törzsek sitternissnek. 
+
+# Illinkalank:
+# Fehéres levelei vannak. Virága zöldesszínű és foltos.
+
+# Messike:
+# Hosszúkás, tökre emlékeztető növény. Könnyű felismerni csíkos leveleiről.
+
+# Pillypank:
+# Fémesszínű termése van. Levele lilás-színű.
+
+
+# 4. közös fotó és QR kód olvasás (itt némi extra infó a kőkereséshez) 
+# Kőkereséshez annyi extra infót kapnak pluszba, hogy megtudják pontosan melyiket is kell keresniük az 5. Koordinátán. Ekkor kapják meg az 5. Koordinátát.
+# (Láda vagy antenna. Adatok letöltése. Kőbegyüjtő szonda, ők vigyék el a követ.)
+
+# 5. GPS koordinátán kőkeresés a 4. QR-kódja alapján.
+# 12 féle kő lenne itt. A megfelelőt kell megtalálniuk és elhozniuk.
+
+henger_adatok:
+    name: Hiányzó szavak
+    type: Szöveges Adat
+    coordinates: *parancs_1_coordinates
+    description:
+    - 1. Star Trek Next Generation
+    - 2. BattleStar Galactica
+    - 3. a fűszer
+    - 4. vulkániak
+    - 5. Q’ronos
+    - 6. dalekek
+    - 7. fremenek
+    - 8. anime
+    - 9. a Battlestar Galactica
+    - 10. StarGate sorozatban
+    - 11. Mass Effect sorozat
+    - 12. XBOX exkluzív
+    - 13. logója inspirálta az idei tábor
+    - 14. Blizzard FPS
+    - 15. magyar fejlesztésű
