@@ -10,7 +10,7 @@ function App() {
   const [isScannerShown, setScannerShown] = useState(false);
   const [isCollectionOfDataShown, setIsCollectionOfDataShown] = useState(false);
   const [isPieceOfDataShown, setIsPieceOfDataShown] = useState(false);
-  const [choosedData, setChoosedData] = useState(null);
+  const [chosenData, setChosenData] = useState(null);
 
   const toHome = () => {
     setIsHomeShown(true);
@@ -24,7 +24,7 @@ function App() {
     setIsCollectionOfDataShown(true);
     setIsPieceOfDataShown(false);
     setScannerShown(false);
-    setChoosedData(null);
+    setChosenData(null);
   };
 
   const toPieceOfData = () => {
@@ -71,8 +71,8 @@ function App() {
         <article>
           {isHomeShown && <Home />}
           {isScannerShown && <Scanner data={data} />}
-          {isCollectionOfDataShown && <CollectionOfData data={data} setChoosedData={setChoosedData} toPieceOfData={toPieceOfData} />}
-          {isPieceOfDataShown && <PieceOfData pieceOfData={choosedData} />}
+          {isCollectionOfDataShown && <CollectionOfData data={data} setChosenData={setChosenData} toPieceOfData={toPieceOfData} />}
+          {isPieceOfDataShown && <PieceOfData pieceOfData={ChosenData} />}
         </article>
       </main>
 
