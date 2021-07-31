@@ -72,7 +72,7 @@ function App() {
           {isHomeShown && <Home />}
           {isScannerShown && <Scanner data={data} />}
           {isCollectionOfDataShown && <CollectionOfData data={data} setChosenData={setChosenData} toPieceOfData={toPieceOfData} />}
-          {isPieceOfDataShown && <PieceOfData pieceOfData={ChosenData} />}
+          {isPieceOfDataShown && <PieceOfData pieceOfData={chosenData} />}
         </article>
       </main>
 
