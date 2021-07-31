@@ -1,33 +1,38 @@
 
 parancs_1:
-    name: 1. Adatgyüjtés
-    type: Paracs
+    name: 1. Adatgyűjtés
+    type: Parancs
     coordinates: &parancs_1_coordinates
         latitude: 47.809977
         longitude: 19.979944
     description:
-    - Keressék meg az adat-gyüjtő hengert.
-    - Töltsék le az adatokat az univerzális letapogatóval. A helyes interfész az osztaguk jelével van ellátva.
-    - Dokumentálják az eseményt egy statikus vizuális felvétellel. A képen szerepeljen a teljes osztaguk, valamint az adat-gyüjtő henger.
+    - Keressék meg az adatgyűjtő hengert.
+    - Töltsék le az adatokat az univerzális letapogatóval.
+      A helyes interfész az osztaguk jelével van ellátva.
+    - Dokumentálják az eseményt egy statikus vizuális felvétellel.
+      A képen szerepeljen a teljes osztaguk, valamint az adatgyűjtő henger.
 
 parancs_2_a:
-    name: 2. Élőlény begyüjtése
+    name: 2. Élőlény begyűjtése
     type: Parancs
     coordinates: &parancs_2_coordinates
         latitude: 47.809753
         longitude: 19.980812
     description:
+    - Hozzanak be a laborba egy beteg Sárga Srikkont.
+    - A sárga srikkon a bolygó szigorúan védett faja.
+      Járjanak el a legnagyobb körültekintéssel.
     - A koordinátán keressék meg a megfelelő állatot és hozzák be.
 
 parancs_2_b:
-    name: 2. Élőlény begyüjtése
+    name: 2. Élőlény begyűjtése
     type: Parancs
     coordinates: *parancs_2_coordinates
     description:
     - A koordinátán keressék meg a megfelelő állatot és hozzák be.
 
 parancs_2_c:
-    name: 2. Élőlény begyüjtése
+    name: 2. Élőlény begyűjtése
     type: Parancs
     coordinates: *parancs_2_coordinates
     description:
@@ -77,7 +82,7 @@ parancs_2_c:
 
 # 4. közös fotó és QR kód olvasás (itt némi extra infó a kőkereséshez) 
 # Kőkereséshez annyi extra infót kapnak pluszba, hogy megtudják pontosan melyiket is kell keresniük az 5. Koordinátán. Ekkor kapják meg az 5. Koordinátát.
-# (Láda vagy antenna. Adatok letöltése. Kőbegyüjtő szonda, ők vigyék el a követ.)
+# (Láda vagy antenna. Adatok letöltése. Kőbegyűjtő szonda, ők vigyék el a követ.)
 
 # 5. GPS koordinátán kőkeresés a 4. QR-kódja alapján.
 # 12 féle kő lenne itt. A megfelelőt kell megtalálniuk és elhozniuk.

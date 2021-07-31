@@ -1,7 +1,8 @@
-import yaml
 import json
-import qrcode
 from os import makedirs
+
+import qrcode
+import yaml
 
 
 def load_yaml(filename):
@@ -23,9 +24,9 @@ def create_printable_html(codes):
     figures = [
         f'''
         <div class="figure">
-            <img class="qrcode" src="{key}.png">
-            <p>{key}</p>
-        </div>''' for key in data.keys()]
+            <img class="qrcode" src="{code}.png">
+            <p>{code}</p>
+        </div>''' for code in codes]
 
     css = '''
     body {
@@ -64,6 +65,7 @@ def create_printable_html(codes):
         </body>
     </html>
     '''
+
 
 def main():
     data = load_yaml("data.yaml")
