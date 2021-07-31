@@ -15,23 +15,12 @@
             "coordinates": {
                 "latitude": 47.809977,
                 "longitude": 19.979944
-            }
-        },
-        "carp": {
-            "name": "Ponty",
-            "type": "Állat",
+            },
             "description": [
-                "Édesvizi hal",
-                "Életkor: 2",
-                "Nem: Nőstény ♀",
-                "Egészségi állapot: gyenge",
-                "Test: Nitrit mérgezés",
-                "Vér: Oxigén hiány"
-            ],
-            "coordinates": {
-                "latitude": 47.809900,
-                "longitude": 19.979900
-            }
+                "Keressék meg az adat-gyüjtő hengert.",
+                "Töltsék le az adatokat az univerzális letapogatóval. A helyes interfész az osztaguk jelével van ellátva.",
+                "Dokumentálják az eseményt egy statikus vizuális felvétellel. A képen szerepeljen a teljes osztaguk, valamint az adat-gyüjtő henger."
+            ]
         },
         "https://tabor.alkimistalaboratorium.hu/": {
             "name": "Kristály lelőhely",
@@ -43,35 +32,59 @@
                 "Veszélyforrás: Kristályevő lények"
             ],
             "coordinates": {
-                "latitude": 47.809753, 
+                "latitude": 47.809753,
                 "longitude": 19.980812
-            }
-        },
-        "crystal_green": {
-            "name": "Zöld kristály",
-            "type": "Tárgy",
+            },
             "description": [
-                "Kriptonit koncentráció: 20%",
-                "Sosem árthat egy darab, ha főgonosz akarsz lenni"
-            ],
-            "coordinates": {
-                "latitude": 47.809753, 
-                "longitude": 19.980812
-            }
+                "A koordinátán keressék meg a megfelelő állatot és hozzák be."
+            ]
         },
-        "crystal_blue": {
-            "name": "Kék kristály",
-            "type": "Tárgy",
-            "description": [
-                "Kriptonit koncentráció: 0.1%",
-                "Dilithium koncentráció: 80%",
-                "Kék hiperhajtómű kompatibilis",
-                "Fogyasztásra nem ajánlott"
-            ],
+        "parancs_2_b": {
+            "name": "2. Élőlény begyüjtése",
+            "type": "Parancs",
             "coordinates": {
-                "latitude": 47.809753, 
+                "latitude": 47.809753,
                 "longitude": 19.980812
-            }
+            },
+            "description": [
+                "A koordinátán keressék meg a megfelelő állatot és hozzák be."
+            ]
+        },
+        "parancs_2_c": {
+            "name": "2. Élőlény begyüjtése",
+            "type": "Parancs",
+            "coordinates": {
+                "latitude": 47.809753,
+                "longitude": 19.980812
+            },
+            "description": [
+                "A koordinátán keressék meg a megfelelő állatot és hozzák be. A parancson rajta van, hogy mit kell megtalálni."
+            ]
+        },
+        "henger_adatok": {
+            "name": "Hiányzó szavak",
+            "type": "Szöveges Adat",
+            "coordinates": {
+                "latitude": 47.809977,
+                "longitude": 19.979944
+            },
+            "description": [
+                "1. Star Trek Next Generation",
+                "2. BattleStar Galactica",
+                "3. a fűszer",
+                "4. vulkániak",
+                "5. Q’ronos",
+                "6. dalekek",
+                "7. fremenek",
+                "8. anime",
+                "9. a Battlestar Galactica",
+                "10. StarGate sorozatban",
+                "11. Mass Effect sorozat",
+                "12. XBOX exkluzív",
+                "13. logója inspirálta az idei tábor",
+                "14. Blizzard FPS",
+                "15. magyar fejlesztésű"
+            ]
         }
     }
 }
