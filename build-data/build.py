@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import json
 from os import makedirs
 
@@ -80,3 +82,6 @@ def main():
 
     html = create_printable_html(data.keys())
     save_text(html, "build/index.htmt")
+
+if __name__ == "__main__":
+    main()
