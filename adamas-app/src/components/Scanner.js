@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import QrReader from "react-qr-reader";
 
-function Scanner({ data, chosenData, setChosenData, toPieceOfData }) {
+function Scanner({ data, setChosenData, toPieceOfData }) {
   const [qrCodeNotInDatabase, setQrCodeNotInDatabase] = useState("");
 
   const handleScan = (qrCode) => {
@@ -13,6 +13,8 @@ function Scanner({ data, chosenData, setChosenData, toPieceOfData }) {
       }
       if (Object.keys(data.items).includes(qrCode)) {
         setChosenData(data.items[qrCode]);
+
+        toPieceOfData();
       } else {
         setQrCodeNotInDatabase(qrCode);
       }
@@ -31,8 +33,6 @@ function Scanner({ data, chosenData, setChosenData, toPieceOfData }) {
           <p>{qrCodeNotInDatabase}</p>
         </div>
       )}
-
-      {chosenData === null ? <h3>Scanning...</h3> : <h2>{chosenData.name}</h2>}
 
       <QrReader delay={300} onError={handleError} onScan={handleScan} facingMode="environment" />
     </div>
