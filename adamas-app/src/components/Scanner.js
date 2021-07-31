@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 import QrReader from "react-qr-reader";
 
-function Scanner({ data }) {
-  const [newQrData, setNewQrData] = useState("");
+function Scanner({ data, chosenData, setChosenData, toPieceOfData }) {
+  const [qrCodeNotInDatabase, setQrCodeNotInDatabase] = useState("");
 
-  const handleScan = (data) => {
-    if (data !== null) {
-      setNewQrData(data);
+  const handleScan = (qrCode) => {
+    if (qrCode !== null) {
       let storedData = JSON.parse(localStorage.getItem("scanned")) || [];
-      if (!storedData.includes(data)) {
-        storedData.push(data);
+      if (!storedData.includes(qrCode)) {
+        storedData.push(qrCode);
         localStorage.setItem("scanned", JSON.stringify(storedData));
+      }
+      if (Object.keys(data.items).includes(qrCode)) {
+        setChosenData(data.items[qrCode]);
+      } else {
+        setQrCodeNotInDatabase(qrCode);
       }
     }
   };
@@ -19,14 +23,16 @@ function Scanner({ data }) {
 
   return (
     <div>
-      {newQrData === "" ? (
+      {qrCodeNotInDatabase === "" ? (
         <h3>Scanning...</h3>
       ) : (
         <div>
           <h3>Scanned:</h3>
-          <p>{newQrData}</p>
+          <p>{qrCodeNotInDatabase}</p>
         </div>
       )}
+
+      {chosenData === null ? <h3>Scanning...</h3> : <h2>{chosenData.name}</h2>}
 
       <QrReader delay={300} onError={handleError} onScan={handleScan} facingMode="environment" />
     </div>
