@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/adamas-app/static/css/main.1ee14c20.chunk.css",
-    "main.js": "/adamas-app/static/js/main.b66fd31a.chunk.js",
-    "main.js.map": "/adamas-app/static/js/main.b66fd31a.chunk.js.map",
+    "main.css": "/adamas-app/static/css/main.6391492e.chunk.css",
+    "main.js": "/adamas-app/static/js/main.6dcf2072.chunk.js",
+    "main.js.map": "/adamas-app/static/js/main.6dcf2072.chunk.js.map",
     "runtime-main.js": "/adamas-app/static/js/runtime-main.67344393.js",
     "runtime-main.js.map": "/adamas-app/static/js/runtime-main.67344393.js.map",
-    "static/js/2.b9ca8386.chunk.js": "/adamas-app/static/js/2.b9ca8386.chunk.js",
-    "static/js/2.b9ca8386.chunk.js.map": "/adamas-app/static/js/2.b9ca8386.chunk.js.map",
+    "static/js/2.f608bb7b.chunk.js": "/adamas-app/static/js/2.f608bb7b.chunk.js",
+    "static/js/2.f608bb7b.chunk.js.map": "/adamas-app/static/js/2.f608bb7b.chunk.js.map",
     "static/js/3.3b3a2e90.chunk.js": "/adamas-app/static/js/3.3b3a2e90.chunk.js",
     "static/js/3.3b3a2e90.chunk.js.map": "/adamas-app/static/js/3.3b3a2e90.chunk.js.map",
     "index.html": "/adamas-app/index.html",
-    "static/css/main.1ee14c20.chunk.css.map": "/adamas-app/static/css/main.1ee14c20.chunk.css.map",
-    "static/js/2.b9ca8386.chunk.js.LICENSE.txt": "/adamas-app/static/js/2.b9ca8386.chunk.js.LICENSE.txt"
+    "static/css/main.6391492e.chunk.css.map": "/adamas-app/static/css/main.6391492e.chunk.css.map",
+    "static/js/2.f608bb7b.chunk.js.LICENSE.txt": "/adamas-app/static/js/2.f608bb7b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.67344393.js",
-    "static/js/2.b9ca8386.chunk.js",
-    "static/css/main.1ee14c20.chunk.css",
-    "static/js/main.b66fd31a.chunk.js"
+    "static/js/2.f608bb7b.chunk.js",
+    "static/css/main.6391492e.chunk.css",
+    "static/js/main.6dcf2072.chunk.js"
   ]
 }
