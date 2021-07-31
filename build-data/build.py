@@ -81,7 +81,7 @@ def main():
         qrcode.make(key).save(f"build/{key}.png")
 
     html = create_printable_html(data.keys())
-    save_text(html, "build/index.htmt")
+    save_text(html, "build/index.html")
 
 if __name__ == "__main__":
     main()
