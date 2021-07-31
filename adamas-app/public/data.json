@@ -1,64 +1,173 @@
 {
     "items": {
-        "Ha ezt el tudod olvasni akkor Sikerült! :)": {
-            "name": "Kaméleon",
-            "type": "Állat",
-            "description": [
-                "Színváltós bőrrel rendelkező hüllő",
-                "Életkor: 14",
-                "Nem: Hím ♂",
-                "Egészségi állapot: stabil",
-                "Jobb láb: letörött karom",
-                "Farok: Pigment hiba",
-                "Bélrendszer: Mikroplasztik eltömődés"
-            ],
+        "parancs_1": {
+            "name": "1. Adatgyűjtés",
+            "type": "Parancs",
             "coordinates": {
                 "latitude": 47.809977,
                 "longitude": 19.979944
             },
             "description": [
-                "Keressék meg az adat-gyüjtő hengert.",
+                "Keressék meg az adatgyűjtő hengert.",
                 "Töltsék le az adatokat az univerzális letapogatóval. A helyes interfész az osztaguk jelével van ellátva.",
-                "Dokumentálják az eseményt egy statikus vizuális felvétellel. A képen szerepeljen a teljes osztaguk, valamint az adat-gyüjtő henger."
+                "Dokumentálják az eseményt egy fényképpel. A képen szerepeljen a teljes osztaguk, valamint az adatgyűjtő henger."
             ]
         },
-        "https://tabor.alkimistalaboratorium.hu/": {
-            "name": "Kristály lelőhely",
-            "type": "Helyszín",
-            "description": [
-                "Természetes eredetű kritály barlang",
-                "Dilithium koncentráció: Magas",
-                "Tritium koncentráció: Magas",
-                "Veszélyforrás: Kristályevő lények"
-            ],
+        "parancs_2_a": {
+            "name": "2. Élőlény begyűjtése",
+            "type": "Parancs",
             "coordinates": {
                 "latitude": 47.809753,
                 "longitude": 19.980812
             },
             "description": [
-                "A koordinátán keressék meg a megfelelő állatot és hozzák be."
+                "Felderítőink a megadott koordinátákon találtak egy beteg Sárga Srikkont.",
+                "Hozzák be ezt a példányt a laborba.",
+                "A sárga srikkon a bolygó szigorúan védett faja. Járjanak el a lehető legnagyobb körültekintéssel.",
+                "",
+                "A Sárga Srikkon teste vörös vagy piros színű.",
+                "Az egészséges példányok hátán keskeny sötét csíkok figyelhetőek meg.",
+                "Összesen 8 lába van, ebből 6 járóláb 2 pedig a farok végén található úgynevezett fogólábak, melyek csípése méreganyagot juttat a szervezetbe.\"",
+                "Nevét megtalálójáról Sárga Eufráteszről kapta.",
+                "",
+                "Tápláléka: Kertiédike",
+                "Létfenntartó konfiguráció: 1C 2B 3A"
             ]
         },
         "parancs_2_b": {
-            "name": "2. Élőlény begyüjtése",
+            "name": "2. Élőlény begyűjtése",
             "type": "Parancs",
             "coordinates": {
                 "latitude": 47.809753,
                 "longitude": 19.980812
             },
             "description": [
-                "A koordinátán keressék meg a megfelelő állatot és hozzák be."
+                "Felderítőink a megadott koordinátákon találtak egy hím Piros Etthert.",
+                "Hozzák be ezt a példányt a laborba.",
+                "A Piros Etther hímei igen ritkák. Biológusaink szeretnék közelebbről megvizsgálni egy példányt.",
+                "",
+                "A Piros Etther teste hosszú, rovátkált.",
+                "Legalább 10 pár lába van, melyekkel kígyóforma mozgást ír le a fűben.",
+                "Színe kékes, esetenként zöldeskékes.",
+                "A nőstények fején kettőskeresztre emlékeztető feromon-szerv található, mellyel a hímeket csalogatják.",
+                "Nevét megtalálójáról Piros Enkiduról kapta.",
+                "",
+                "Tápláléka: Illinkalank",
+                "Létfenntartó konfiguráció: 1C 2A 3B"
             ]
         },
         "parancs_2_c": {
-            "name": "2. Élőlény begyüjtése",
+            "name": "2. Élőlény begyűjtése",
             "type": "Parancs",
             "coordinates": {
                 "latitude": 47.809753,
                 "longitude": 19.980812
             },
             "description": [
-                "A koordinátán keressék meg a megfelelő állatot és hozzák be. A parancson rajta van, hogy mit kell megtalálni."
+                "Felderítőink a megadott koordinátákon találtak egy nőstény Kék Iotionist.",
+                "Hozzák be ezt a példányt a laborba.",
+                "A Kék Iotionis nőstényei igen ritkák. Biológusaink szeretnék közelebbről megvizsgálni egy példányt.",
+                "",
+                "A Kék Iotionis teste a földön honos pókokhoz hasonlít, de hosszú farka van a potroha végén, mellyel könnyedén kapaszkodik meg fákon.",
+                "Teste sárgás színű.",
+                "A hímek hasán sötétszínű pöttyök vagy foltok figyelhetőek meg.",
+                "Nevét megtalálójáról Kék Edömérről kapta.",
+                "",
+                "Tápláléka: Sárgafurginka",
+                "Létfenntartó konfiguráció: 1B 2A 3C"
+            ]
+        },
+        "parancs_3": {
+            "name": "3. Növény begyűjtése",
+            "type": "Parancs",
+            "coordinates": {
+                "latitude": 47.812896,
+                "longitude": 19.979251
+            },
+            "description": [
+                "Keressék meg a növényt ami szükséges az állat életben maradásához.",
+                "",
+                "Segédlet a célterületen található növények meghatározásához:",
+                "",
+                "Lityalang: Virága fehérszínű gömbőcökre hasonlít. Levele kékes színű.",
+                "Kertiédike: Virága piros vagy vörös színű, hosszúkás. Levele is vöröses.",
+                "Sárgafurginka: Levelei sárgás színűek. Termése fémes színű, innen is a furginka név.",
+                "Lilásfereng: Levelei lilás színűek és csíkosak.",
+                "Sitternus: Narancssárga levelei vannak. Középen egy nagyobb  termés található rajta, melyet, ha megcsípi a dér felfúvódik és a spóráit messze ellövi. Ez utóbbit hívják a helyi törzsek sitternissnek.",
+                "Illinkalank: Fehéres levelei vannak. Virága zöldesszínű és foltos.",
+                "Messike: Hosszúkás, tökre emlékeztető növény. Könnyű felismerni csíkos leveleiről.",
+                "Pillypank: Fémesszínű termése van. Levele lilás-színű."
+            ]
+        },
+        "parancs_4": {
+            "name": "4. Kőbegyüjtő szonda",
+            "type": "Parancs",
+            "coordinates": {
+                "latitude": 47.811374,
+                "longitude": 19.980952
+            },
+            "description": [
+                "Kőbegyüjtő szondánk meghibásodott.",
+                "Menjenek el a szonda utolsó ismert helyzetére.",
+                "Dokumentálják a kárt egy fényképpel. A képen szerepeljen a teljes osztaguk, valamint a szonda.",
+                "Töltsék le a szonda adatait.",
+                "Ha kell, teljesítsék a szonda utolsó feladatát."
+            ]
+        },
+        "parancs_5": {
+            "name": "Szonda feladata",
+            "type": "Parancs",
+            "coordinates": {
+                "latitude": 47.810659,
+                "longitude": 19.980659
+            },
+            "description": [
+                "Program:",
+                "10 Mozog: {szélesség: 47.810659, hosszúság: 19.980659}",
+                "20 Gyűjt: ásvány, Deutérium koncentráció: Magas",
+                "30 Ismétel: 20",
+                "40 Mozog: főhadiszállás"
+            ]
+        },
+        "deuterium_rich_mineral": {
+            "name": "Deutérium gazdag ásvány",
+            "type": "Ásvány",
+            "coordinates": {
+                "latitude": 47.810659,
+                "longitude": 19.980659
+            },
+            "description": [
+                "Vas koncentráció: Magas",
+                "Deutérium koncentráció: Magas"
+            ]
+        },
+        "red_mineral": {
+            "name": "Vörös ásvány",
+            "type": "Ásvány",
+            "coordinates": {
+                "latitude": 47.810659,
+                "longitude": 19.980659
+            },
+            "description": [
+                "Vas koncentráció: Magas",
+                "Deutérium koncentráció: Alacsony"
+            ]
+        },
+        "easter_egg": {
+            "name": "Fényork Tojás",
+            "type": "Tojás",
+            "coordinates": {
+                "latitude": 47.810659,
+                "longitude": 19.980659
+            },
+            "description": [
+                "??? Ismeretlen ???",
+                "Deutérium koncentráció: Alacsony",
+                "!!! Tér-idő anomália detektálva !!!",
+                "???",
+                "???",
+                "???",
+                "???"
             ]
         },
         "henger_adatok": {
