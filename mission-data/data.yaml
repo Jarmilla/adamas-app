@@ -1,4 +1,3 @@
-
 parancs_1:
     name: 1. Adatgyűjtés
     type: Parancs
@@ -19,18 +18,18 @@ parancs_2_a:
         latitude: 47.809753
         longitude: 19.980812
     description:
-    - Felderítőink a megadott koordinátákon találtak egy beteg Sárga Srikkont.
+    - Felderítőink a megadott koordinátákon találtak egy beteg sárga srikkont.
     - Hozzák be ezt a példányt a laborba.
     - A sárga srikkon a bolygó szigorúan védett faja.
       Járjanak el a lehető legnagyobb körültekintéssel.
     - ""
-    - A Sárga Srikkon teste vörös vagy piros színű.
+    - A sárga srikkon teste vörös vagy piros színű.
     - Az egészséges példányok hátán keskeny sötét csíkok figyelhetőek meg.
     - Összesen 8 lába van, ebből 6 járóláb 2 pedig a farok végén található
       úgynevezett fogólábak, melyek csípése méreganyagot juttat a szervezetbe."
     - Nevét megtalálójáról Sárga Eufráteszről kapta.
     - ""
-    - "Tápláléka: Kertiédike"
+    - "Tápláléka: kertiédike"
     - "Létfenntartó konfiguráció: 1C 2B 3A"
 
 parancs_2_b:
@@ -38,19 +37,19 @@ parancs_2_b:
     type: Parancs
     coordinates: *parancs_2_coordinates
     description:
-    - Felderítőink a megadott koordinátákon találtak egy hím Piros Etthert.
+    - Felderítőink a megadott koordinátákon találtak egy hím piros etthert.
     - Hozzák be ezt a példányt a laborba.
-    - A Piros Etther hímei igen ritkák.
+    - A piros etther hímei igen ritkák.
       Biológusaink szeretnék közelebbről megvizsgálni egy példányt.
     - ""
-    - A Piros Etther teste hosszú, rovátkált.
+    - A piros etther teste hosszú, rovátkált.
     - Legalább 10 pár lába van, melyekkel kígyóforma mozgást ír le a fűben.
     - Színe kékes, esetenként zöldeskékes.
     - A nőstények fején kettőskeresztre emlékeztető feromon-szerv található,
       mellyel a hímeket csalogatják.
     - Nevét megtalálójáról Piros Enkiduról kapta.
     - ""
-    - "Tápláléka: Illinkalank"
+    - "Tápláléka: illinkalank"
     - "Létfenntartó konfiguráció: 1C 2A 3B"
 
 parancs_2_c:
@@ -58,19 +57,19 @@ parancs_2_c:
     type: Parancs
     coordinates: *parancs_2_coordinates
     description:
-    - Felderítőink a megadott koordinátákon találtak egy nőstény Kék Iotionist.
+    - Felderítőink a megadott koordinátákon találtak egy nőstény kék iotionist.
     - Hozzák be ezt a példányt a laborba.
-    - A Kék Iotionis nőstényei igen ritkák.
+    - A kék iotionis nőstényei igen ritkák.
       Biológusaink szeretnék közelebbről megvizsgálni egy példányt.
     - ""
-    - A Kék Iotionis teste a földön honos pókokhoz hasonlít,
+    - A kék iotionis teste a földön honos pókokhoz hasonlít,
       de hosszú farka van a potroha végén,
-      mellyel könnyedén kapaszkodik meg fákon.
+      mellyel könnyedén kapaszkodik meg a fákon.
     - Teste sárgás színű.
     - A hímek hasán sötétszínű pöttyök vagy foltok figyelhetőek meg.
     - Nevét megtalálójáról Kék Edömérről kapta.
     - ""
-    - "Tápláléka: Sárgafurginka"
+    - "Tápláléka: sárgafurginka"
     - "Létfenntartó konfiguráció: 1B 2A 3C"
 
 parancs_3:
@@ -96,17 +95,18 @@ parancs_3:
     - "Pillypank: Fémesszínű termése van. Levele lilás-színű."
 
 parancs_4:
-    name: 4. Kőbegyüjtő szonda
+    name: 4. Kőbegyűjtő szonda
     type: Parancs
     coordinates:
         latitude: 47.811374
         longitude: 19.980952
     description:
-    - Kőbegyüjtő szondánk meghibásodott.
+    - Kőbegyűjtő szondánk meghibásodott.
     - Menjenek el a szonda utolsó ismert helyzetére.
     - Dokumentálják a kárt egy fényképpel.
       A képen szerepeljen a teljes osztaguk, valamint a szonda.
     - Töltsék le a szonda adatait.
+      A helyes interfész az osztaguk jelével van ellátva.
     - Ha kell, teljesítsék a szonda utolsó feladatát.
 
 parancs_5:
@@ -117,10 +117,10 @@ parancs_5:
         longitude: 19.980659
     description:
     - "Program:"
-    - "10 Mozog: {szélesség: 47.810659, hosszúság: 19.980659}"
-    - "20 Gyűjt: ásvány, Deutérium koncentráció: Magas"
-    - "30 Ismétel: 20"
-    - "40 Mozog: főhadiszállás"
+    - "A Mozog: {szélesség: 47.810659, hosszúság: 19.980659}"
+    - "B Gyűjt: ásvány, Deutérium koncentráció: Magas"
+    - "C Ismétel: B"
+    - "D Mozog: főhadiszállás"
 
 deuterium_rich_mineral:
     name: Deutérium gazdag ásvány
