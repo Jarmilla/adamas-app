@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/adamas-app/static/css/main.cccb2611.chunk.css",
-    "main.js": "/adamas-app/static/js/main.2c51d612.chunk.js",
-    "main.js.map": "/adamas-app/static/js/main.2c51d612.chunk.js.map",
+    "main.js": "/adamas-app/static/js/main.fefa2e86.chunk.js",
+    "main.js.map": "/adamas-app/static/js/main.fefa2e86.chunk.js.map",
     "runtime-main.js": "/adamas-app/static/js/runtime-main.67344393.js",
     "runtime-main.js.map": "/adamas-app/static/js/runtime-main.67344393.js.map",
     "static/js/2.b9ca8386.chunk.js": "/adamas-app/static/js/2.b9ca8386.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.67344393.js",
     "static/js/2.b9ca8386.chunk.js",
     "static/css/main.cccb2611.chunk.css",
-    "static/js/main.2c51d612.chunk.js"
+    "static/js/main.fefa2e86.chunk.js"
   ]
 }
