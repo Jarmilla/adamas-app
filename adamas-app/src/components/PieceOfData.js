@@ -26,16 +26,25 @@ function PieceOfData({ pieceOfData }) {
       </ul>
 
       <h3>Bemérve itt: </h3>
-      {Object.keys(pieceOfData.coordinates).map((value) => (
-        <p key={value}>
-          {value} : {pieceOfData.coordinates[value]}
-        </p>
-      ))}
+      <p>
+        <span>{pieceOfData.coordinates.latitude}</span>
+        <span>, </span>
+        <span>{pieceOfData.coordinates.longitude}</span>
+      </p>
 
-      <h3>Jelenlegi tartozkódási adat:</h3>
-      <p>{userCoords?.latitude}</p>
-      <p>{userCoords?.longitude}</p>
-      <p>{userCoords?.accuracy} </p>
+      <h3>Jelenlegi tartozkódási hely:</h3>
+      {userCoords ? (
+        <div>
+          <p>
+            <span>{userCoords?.latitude.toFixed(6)}</span>
+            <span>, </span>
+            <span>{userCoords?.longitude.toFixed(6)}</span>
+          </p>
+          <p>Pontosság : {userCoords?.accuracy} m</p>
+        </div>
+      ) : (
+        <p>Ismeretlen</p>
+      )}
     </div>
   );
 }
