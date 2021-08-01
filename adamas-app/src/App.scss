@@ -41,6 +41,11 @@ li {
   text-align: left;
 }
 
+li:empty {
+  list-style: none;
+  height: 1rem;
+}
+
 .home-button {
   font-size: 2rem;
   border-radius: 3rem 0 0 0;
