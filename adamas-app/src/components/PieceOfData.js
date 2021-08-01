@@ -38,7 +38,6 @@ function PieceOfData({ pieceOfData }) {
     <div className="piece-of-data">
       <h2 className="button-effect selected">{pieceOfData.name}</h2>
 
-      <h3>Letapogatás eredménye:</h3>
       <ul>
         <li>Típus: {pieceOfData.type}</li>
         {pieceOfData.description.map((trait, key) => (
@@ -52,7 +51,7 @@ function PieceOfData({ pieceOfData }) {
         <span>, </span>
         <span>{pieceOfData.coordinates.longitude}</span>
       </p>
-
+      {userCoords ? <p>Távolság: {geoDistance(pieceOfData.coordinates, userCoords).toFixed(0)} m</p> : ""}
       <h3>Jelenlegi tartozkódási hely:</h3>
       {userCoords ? (
         <div>
@@ -61,7 +60,7 @@ function PieceOfData({ pieceOfData }) {
             <span>, </span>
             <span>{userCoords?.longitude.toFixed(6)}</span>
           </p>
-          <p>Pontosság : {userCoords?.accuracy} m</p>
+          <p>Pontosság : {userCoords?.accuracy.toFixed(0)} m</p>
         </div>
       ) : (
         <p>Ismeretlen</p>
