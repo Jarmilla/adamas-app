@@ -21,6 +21,10 @@ function geoDistance(coordinates1, coordinates2) {
   );
 }
 
+function formatCoords(coords) {
+  return "" + coords.latitude.toFixed(6) + ", " + coords.longitude.toFixed(6);
+}
+
 function PieceOfData({ pieceOfData }) {
   const [userCoords, setUserCoords] = useState(null);
 
@@ -40,31 +44,18 @@ function PieceOfData({ pieceOfData }) {
 
       <ul>
         <li>Típus: {pieceOfData.type}</li>
+        { pieceOfData.coordinates ?
+          <li>Bemérve: {formatCoords(pieceOfData.coordinates)}</li>
+        : ""}
+        { pieceOfData.coordinates && userCoords ?
+          <li>Távolság: {geoDistance(pieceOfData.coordinates, userCoords).toFixed(0)} m (±{userCoords.accuracy.toFixed(0)} m) </li>
+        : ""}
+      </ul>
+      <ul>
         {pieceOfData.description.map((trait, key) => (
           <li key={key}>{trait}</li>
         ))}
       </ul>
-
-      <h3>Bemérve itt: </h3>
-      <p>
-        <span>{pieceOfData.coordinates.latitude}</span>
-        <span>, </span>
-        <span>{pieceOfData.coordinates.longitude}</span>
-      </p>
-      {userCoords ? <p>Távolság: {geoDistance(pieceOfData.coordinates, userCoords).toFixed(0)} m</p> : ""}
-      <h3>Jelenlegi tartozkódási hely:</h3>
-      {userCoords ? (
-        <div>
-          <p>
-            <span>{userCoords?.latitude.toFixed(6)}</span>
-            <span>, </span>
-            <span>{userCoords?.longitude.toFixed(6)}</span>
-          </p>
-          <p>Pontosság : {userCoords?.accuracy.toFixed(0)} m</p>
-        </div>
-      ) : (
-        <p>Ismeretlen</p>
-      )}
     </div>
   );
 }
