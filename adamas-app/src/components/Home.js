@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 
 function Home() {
+  //Gyöngyös, Pipishegyi repülőtér
   const lat = 47.813778;
   const lon = 19.976766;
   const APIkey = "23c16eed06c02fd60c74cdaf0b3558f3";
   const [weather, setWeather] = useState(null);
-  let today = new Date();
   const daysOfWeek = ["Vasárnap", "Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat"];
 
   useEffect(() => {
@@ -33,12 +33,19 @@ function Home() {
       ) : (
         "Loading..."
       )}
-      {weather?.daily.map((day) => (
+      {weather?.daily.slice(0, 3).map((day) => (
         <div key={day.dt}>
           <div>{daysOfWeek[new Date(day.dt * 1000).getDay()]}</div>
-          <div>{day.temp.day} °C</div>
-          <div>{day.temp.max} °C</div>
-          <div>{day.temp.min} °C</div>
+          <div>
+            <h3>{day.temp.day} °C</h3>
+            <p>ikon</p>
+          </div>
+          <div>Reggel: {day.temp.morn} °C</div>
+          <div>Délben: {day.temp.day} °C</div>
+          <div>Este: {day.temp.eve} °C</div>
+          <div>Éjszaka: {day.temp.night} °C</div>
+          <div>Max: {day.temp.max} °C</div>
+          <div>Min: {day.temp.min} °C</div>
           <div>{day.wind_speed}</div>
           <div>{day.rain} mm</div>
 
