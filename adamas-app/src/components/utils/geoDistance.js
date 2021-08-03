@@ -22,3 +22,15 @@ export function geoDistance(coordinates1, coordinates2) {
 export function formatCoords(coords) {
   return "" + coords.latitude.toFixed(6) + ", " + coords.longitude.toFixed(6);
 }
+
+export function subsribeToPosition(setCoords) {
+  return () => {
+    const watchID = navigator.geolocation.watchPosition(
+      (position) => setCoords(position.coords),
+      (error) => console.log("Error:", error),
+      { enableHighAccuracy: true }
+    );
+
+    return () => navigator.geolocation.clearWatch(watchID);
+  };
+}
