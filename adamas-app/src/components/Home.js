@@ -1,27 +1,45 @@
 import React, { useState, useEffect } from "react";
+import { geoDistance, formatCoords, subsribeToPosition } from "./utils/geoDistance";
 
 function Home() {
   //Gyöngyös, Pipishegyi repülőtér
-  const lat = 47.814303;
-  const lon = 19.9784174;
+  const coordinates = {
+    latitude: 47.814303,
+    longitude: 19.9784174,
+  };
   const APIkey = "23c16eed06c02fd60c74cdaf0b3558f3";
   const [weather, setWeather] = useState(null);
   const daysOfWeek = ["Vasárnap", "Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat"];
+  const [userCoords, setUserCoords] = useState(null);
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(subsribeToPosition(setUserCoords), []);
 
   useEffect(() => {
-    fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&units=metric&lang=hu&appid=${APIkey}`)
+    fetch(
+      `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.latitude}&lon=${coordinates.longitude}&exclude=minutely,hourly&units=metric&lang=hu&appid=${APIkey}`
+    )
       .then((response) => response.json())
       .then((data) => {
         setWeather(data);
         console.log(data);
       })
       .catch((err) => console.log("Error:", err));
-  }, []);
+  }, [coordinates.latitude, coordinates.longitude]);
 
   return (
     <div>
       <h3>Főhadiszállás</h3>
-      <p>Koordináták</p>
+      <ul>
+        <li>Koordináták: {formatCoords(coordinates)}</li>
+        {userCoords ? (
+          <li>
+            Távolság: {geoDistance(coordinates, userCoords).toFixed(0)} m (±{userCoords.accuracy.toFixed(0)} m){" "}
+          </li>
+        ) : (
+          ""
+        )}
+      </ul>
 
       {weather?.daily.slice(0, 3).map((day) => (
         <div key={day.dt}>
