@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { geoDistance, formatCoords, subsribeToPosition } from "./utils/geoDistance";
+import WeatherIcon from "./utils/icons";
+import { WiHumidity, WiRain, WiThermometer, WiStrongWind } from "weather-icons-react";
 
 function Home() {
   //Gyöngyös, Pipishegyi repülőtér
@@ -42,17 +44,34 @@ function Home() {
       </ul>
 
       {weather?.daily.slice(0, 3).map((day) => (
-        <div key={day.dt}>
+        <div key={day.dt} className="weather">
           <h3>{daysOfWeek[new Date(day.dt * 1000).getDay()]}</h3>
           <div>
-            Hőmérséklet: {day.temp.min.toFixed(0)} - {day.temp.max.toFixed(0)} °C
+            <WeatherIcon code={day.weather[0].icon} size="75px" />
+            <div>{day.weather[0].description}</div>
           </div>
-          <div>Szélsebesség: {day.wind_speed} m/s</div>
-          <div>Csapadék: {day.rain ? day.rain.toFixed(2) : (0).toFixed(2)} mm</div>
-          <div>Páratartalom: {day.humidity.toFixed(0)}%</div>
+          <div>
+            <WiThermometer />
+            {/*  Hőmérséklet: */} {day.temp.min.toFixed(0)} - {day.temp.max.toFixed(0)} °C
+          </div>
+          <div>
+            {" "}
+            <WiStrongWind />
+            {/* Szélsebesség: */} {day.wind_speed} m/s
+          </div>
+          <div>
+            {" "}
+            <WiRain />
+            {/* Csapadék:  */}
+            {day.rain ? day.rain.toFixed(2) : (0).toFixed(2)} mm
+          </div>
+          <div>
+            <WiHumidity /* size="24px" */ />
+            {/* Páratartalom:  */}
+            {day.humidity.toFixed(0)}%
+          </div>
 
           {/* <WeatherIcon code={day.weather[0].icon} size="50px"/> */}
-          <div>{day.weather[0].description}</div>
         </div>
       ))}
     </div>
