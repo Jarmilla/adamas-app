@@ -60,7 +60,7 @@ function App() {
   return (
     <div className="App">
       <button className={`home-button button-effect ${isHomeShown ? "selected" : null}`} onClick={toHome}>
-        ASDF Adamas
+        ASDF Adamish SX7
       </button>
 
       <main>

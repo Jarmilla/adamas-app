@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 
 function Home() {
   //Gyöngyös, Pipishegyi repülőtér
-  const lat = 47.813778;
-  const lon = 19.976766;
+  const lat = 47.814303;
+  const lon = 19.9784174;
   const APIkey = "23c16eed06c02fd60c74cdaf0b3558f3";
   const [weather, setWeather] = useState(null);
   const daysOfWeek = ["Vasárnap", "Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat"];
@@ -23,31 +23,15 @@ function Home() {
       <h3>Főhadiszállás</h3>
       <p>Koordináták</p>
 
-      {weather ? (
-        <ul>
-          <li>{weather.current.temp} °C</li>
-          <li>ikonkép</li>
-          <li>Szélsebbesség: {weather.current.wind_speed}</li>
-          <li>{weather.current.weather[0].description}</li>
-        </ul>
-      ) : (
-        "Loading..."
-      )}
       {weather?.daily.slice(0, 3).map((day) => (
         <div key={day.dt}>
-          <div>{daysOfWeek[new Date(day.dt * 1000).getDay()]}</div>
+          <h3>{daysOfWeek[new Date(day.dt * 1000).getDay()]}</h3>
           <div>
-            <h3>{day.temp.day} °C</h3>
-            <p>ikon</p>
+            Hőmérséklet: {day.temp.min.toFixed(0)} - {day.temp.max.toFixed(0)} °C
           </div>
-          <div>Reggel: {day.temp.morn} °C</div>
-          <div>Délben: {day.temp.day} °C</div>
-          <div>Este: {day.temp.eve} °C</div>
-          <div>Éjszaka: {day.temp.night} °C</div>
-          <div>Max: {day.temp.max} °C</div>
-          <div>Min: {day.temp.min} °C</div>
-          <div>{day.wind_speed}</div>
-          <div>{day.rain} mm</div>
+          <div>Szélsebesség: {day.wind_speed} m/s</div>
+          <div>Csapadék: {day.rain ? day.rain.toFixed(2) : (0).toFixed(2)} mm</div>
+          <div>Páratartalom: {day.humidity.toFixed(0)}%</div>
 
           {/* <WeatherIcon code={day.weather[0].icon} size="50px"/> */}
           <div>{day.weather[0].description}</div>
