@@ -1,18 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { geoDistance, formatCoords } from "./utils/geoDistance";
+import { geoDistance, formatCoords, subsribeToPosition } from "./utils/geoDistance";
 
 function PieceOfData({ pieceOfData }) {
   const [userCoords, setUserCoords] = useState(null);
 
-  useEffect(() => {
-    const watchID = navigator.geolocation.watchPosition(
-      (position) => setUserCoords(position.coords),
-      (error) => console.log("Error:", error),
-      { enableHighAccuracy: true }
-    );
-
-    return () => navigator.geolocation.clearWatch(watchID);
-  }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(subsribeToPosition(setUserCoords), []);
 
   return (
     <div className="piece-of-data">
