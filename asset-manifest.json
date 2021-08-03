@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/adamas-app/static/css/main.a9c252c0.chunk.css",
-    "main.js": "/adamas-app/static/js/main.81d58e02.chunk.js",
-    "main.js.map": "/adamas-app/static/js/main.81d58e02.chunk.js.map",
-    "runtime-main.js": "/adamas-app/static/js/runtime-main.67344393.js",
-    "runtime-main.js.map": "/adamas-app/static/js/runtime-main.67344393.js.map",
-    "static/js/2.f608bb7b.chunk.js": "/adamas-app/static/js/2.f608bb7b.chunk.js",
-    "static/js/2.f608bb7b.chunk.js.map": "/adamas-app/static/js/2.f608bb7b.chunk.js.map",
-    "static/js/3.3b3a2e90.chunk.js": "/adamas-app/static/js/3.3b3a2e90.chunk.js",
-    "static/js/3.3b3a2e90.chunk.js.map": "/adamas-app/static/js/3.3b3a2e90.chunk.js.map",
+    "main.css": "/adamas-app/static/css/main.742d8c12.chunk.css",
+    "main.js": "/adamas-app/static/js/main.0d8cdaae.chunk.js",
+    "main.js.map": "/adamas-app/static/js/main.0d8cdaae.chunk.js.map",
+    "runtime-main.js": "/adamas-app/static/js/runtime-main.8ffd4d6f.js",
+    "runtime-main.js.map": "/adamas-app/static/js/runtime-main.8ffd4d6f.js.map",
+    "static/js/2.23a1d79e.chunk.js": "/adamas-app/static/js/2.23a1d79e.chunk.js",
+    "static/js/2.23a1d79e.chunk.js.map": "/adamas-app/static/js/2.23a1d79e.chunk.js.map",
+    "static/js/3.d6bf567d.chunk.js": "/adamas-app/static/js/3.d6bf567d.chunk.js",
+    "static/js/3.d6bf567d.chunk.js.map": "/adamas-app/static/js/3.d6bf567d.chunk.js.map",
     "index.html": "/adamas-app/index.html",
-    "static/css/main.a9c252c0.chunk.css.map": "/adamas-app/static/css/main.a9c252c0.chunk.css.map",
-    "static/js/2.f608bb7b.chunk.js.LICENSE.txt": "/adamas-app/static/js/2.f608bb7b.chunk.js.LICENSE.txt"
+    "static/css/main.742d8c12.chunk.css.map": "/adamas-app/static/css/main.742d8c12.chunk.css.map",
+    "static/js/2.23a1d79e.chunk.js.LICENSE.txt": "/adamas-app/static/js/2.23a1d79e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.67344393.js",
-    "static/js/2.f608bb7b.chunk.js",
-    "static/css/main.a9c252c0.chunk.css",
-    "static/js/main.81d58e02.chunk.js"
+    "static/js/runtime-main.8ffd4d6f.js",
+    "static/js/2.23a1d79e.chunk.js",
+    "static/css/main.742d8c12.chunk.css",
+    "static/js/main.0d8cdaae.chunk.js"
   ]
 }
