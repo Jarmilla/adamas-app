@@ -124,6 +124,15 @@ nav {
   margin: 0.5rem auto;
 }
 
+.weather-display {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  svg {
+    vertical-align: middle;
+  }
+}
+
 @media (min-width: 400px) {
   .App {
     height: 100vh;

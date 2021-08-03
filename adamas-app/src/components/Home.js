@@ -10,8 +10,9 @@ function Home() {
     longitude: 19.9784174,
   };
   const APIkey = "23c16eed06c02fd60c74cdaf0b3558f3";
-  const [weather, setWeather] = useState(null);
   const daysOfWeek = ["Vasárnap", "Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat"];
+  const smallIconSize = "1.5em";
+  const [weather, setWeather] = useState(null);
   const [userCoords, setUserCoords] = useState(null);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -44,34 +45,28 @@ function Home() {
       </ul>
 
       {weather?.daily.slice(0, 3).map((day) => (
-        <div key={day.dt} className="weather">
+        <div key={day.dt}>
           <h3>{daysOfWeek[new Date(day.dt * 1000).getDay()]}</h3>
-          <div>
-            <WeatherIcon code={day.weather[0].icon} size="75px" />
-            <div>{day.weather[0].description}</div>
+          <div className="weather-display">
+            <div>
+              <WeatherIcon code={day.weather[0].icon} size="5rem" alt={day.weather[0].description} />
+              <p>{day.weather[0].description}</p>
+            </div>
+            <div>
+              <p>
+                <WiThermometer size={smallIconSize} /> {day.temp.min.toFixed(0)} - {day.temp.max.toFixed(0)} °C{" "}
+              </p>
+              <p>
+                <WiStrongWind size={smallIconSize} /> {day.wind_speed} m/s
+              </p>
+              <p>
+                <WiRain size={smallIconSize} /> {day.rain ? day.rain.toFixed(2) : (0).toFixed(2)} mm
+              </p>
+              <p>
+                <WiHumidity size={smallIconSize} /> {day.humidity.toFixed(0)}%
+              </p>
+            </div>
           </div>
-          <div>
-            <WiThermometer />
-            {/*  Hőmérséklet: */} {day.temp.min.toFixed(0)} - {day.temp.max.toFixed(0)} °C
-          </div>
-          <div>
-            {" "}
-            <WiStrongWind />
-            {/* Szélsebesség: */} {day.wind_speed} m/s
-          </div>
-          <div>
-            {" "}
-            <WiRain />
-            {/* Csapadék:  */}
-            {day.rain ? day.rain.toFixed(2) : (0).toFixed(2)} mm
-          </div>
-          <div>
-            <WiHumidity /* size="24px" */ />
-            {/* Páratartalom:  */}
-            {day.humidity.toFixed(0)}%
-          </div>
-
-          {/* <WeatherIcon code={day.weather[0].icon} size="50px"/> */}
         </div>
       ))}
     </div>
