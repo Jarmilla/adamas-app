@@ -4,8 +4,8 @@
             "name": "1. Adatgyűjtés",
             "type": "Parancs",
             "coordinates": {
-                "latitude": 47.809977,
-                "longitude": 19.979944
+                "latitude": 47.812896,
+                "longitude": 19.979251
             },
             "description": [
                 "Keressék meg az adatgyűjtő hengert.",
@@ -17,8 +17,8 @@
             "name": "2. Élőlény begyűjtése",
             "type": "Parancs",
             "coordinates": {
-                "latitude": 47.809753,
-                "longitude": 19.980812
+                "latitude": 47.811374,
+                "longitude": 19.980952
             },
             "description": [
                 "Felderítőink a megadott koordinátákon találtak egy beteg sárga srikkont.",
@@ -38,8 +38,8 @@
             "name": "2. Élőlény begyűjtése",
             "type": "Parancs",
             "coordinates": {
-                "latitude": 47.809753,
-                "longitude": 19.980812
+                "latitude": 47.811374,
+                "longitude": 19.980952
             },
             "description": [
                 "Felderítőink a megadott koordinátákon találtak egy hím piros etthert.",
@@ -59,9 +59,9 @@
         "parancs_2_c": {
             "name": "2. Élőlény begyűjtése",
             "type": "Parancs",
-            "coordinates": {
-                "latitude": 47.809753,
-                "longitude": 19.980812
+            "coordinates":
+                "latitude": 47.811374,
+                "longitude": 19.980952
             },
             "description": [
                 "Felderítőink a megadott koordinátákon találtak egy nőstény kék iotionist.",
@@ -81,8 +81,8 @@
             "name": "3. Növény begyűjtése",
             "type": "Parancs",
             "coordinates": {
-                "latitude": 47.812896,
-                "longitude": 19.979251
+                "latitude": 47.810659,
+                "longitude": 19.980659
             },
             "description": [
                 "Keressék meg a növényt ami szükséges az állat életben maradásához.",
@@ -103,8 +103,8 @@
             "name": "4. Kőbegyűjtő szonda",
             "type": "Parancs",
             "coordinates": {
-                "latitude": 47.811374,
-                "longitude": 19.980952
+                "latitude": 47.809753,
+                "longitude": 19.980812
             },
             "description": [
                 "Kőbegyűjtő szondánk meghibásodott.",
@@ -118,8 +118,8 @@
             "name": "Szonda feladata",
             "type": "Parancs",
             "coordinates": {
-                "latitude": 47.810659,
-                "longitude": 19.980659
+                "latitude": 47.809977,
+                "longitude": 19.979944
             },
             "description": [
                 "Program:",
@@ -133,8 +133,8 @@
             "name": "Deutérium gazdag ásvány",
             "type": "Ásvány",
             "coordinates": {
-                "latitude": 47.810659,
-                "longitude": 19.980659
+                "latitude": 47.809977,
+                "longitude": 19.979944
             },
             "description": [
                 "Vas koncentráció: Magas",
@@ -145,8 +145,8 @@
             "name": "Vörös ásvány",
             "type": "Ásvány",
             "coordinates": {
-                "latitude": 47.810659,
-                "longitude": 19.980659
+                "latitude": 47.809977,
+                "longitude": 19.979944
             },
             "description": [
                 "Vas koncentráció: Magas",
@@ -157,8 +157,8 @@
             "name": "Fényork Tojás",
             "type": "Tojás",
             "coordinates": {
-                "latitude": 47.810659,
-                "longitude": 19.980659
+                "latitude": 47.809977,
+                "longitude": 19.979944
             },
             "description": [
                 "??? Ismeretlen ???",
@@ -174,8 +174,8 @@
             "name": "Hiányzó szavak",
             "type": "Szöveges Adat",
             "coordinates": {
-                "latitude": 47.809977,
-                "longitude": 19.979944
+                "latitude": 47.812896,
+                "longitude": 19.979251
             },
             "description": [
                 "1. Star Trek Next Generation",
