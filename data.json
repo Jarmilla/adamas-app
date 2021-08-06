@@ -59,7 +59,7 @@
         "parancs_2_c": {
             "name": "2. Élőlény begyűjtése",
             "type": "Parancs",
-            "coordinates":
+            "coordinates": {
                 "latitude": 47.811374,
                 "longitude": 19.980952
             },
